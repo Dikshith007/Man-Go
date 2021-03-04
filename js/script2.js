@@ -5,7 +5,7 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     checkInputs();
@@ -28,7 +28,7 @@ function checkInputs() {
     if (emailValue === '') {
         setErrorFor(email, 'Email cannot be blank');
     } else if (!isEmail(emailValue)) {
-        setErrorFor(email, 'Not a valid email');
+        setErrorFor(email, 'Email is not valid');
     } else {
         setSuccessFor(email);
     }
@@ -51,8 +51,8 @@ function checkInputs() {
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
-    formControl.className = 'form-control error';
     small.innerText = message;
+    formControl.className = 'form-control error';
 }
 
 function setSuccessFor(input) {

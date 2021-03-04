@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -157,7 +161,7 @@ html{
 
 .sm a{
   color: #fff;
-  font-size: 22px;
+  font-size: 24px;
   margin: 0 10px;
   transition: all 1s;
 }
@@ -174,10 +178,14 @@ html{
    color: #12bed4;
 }
 .sm a:nth-child(3):before{
-   color: #ee7b1d;
+   background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .sm a:nth-child(4):before{
-   color: #0ec058;
+   color:  #ce620a;
 }
 .sm a:nth-child(5):before{
   color: #ff0000;
@@ -265,7 +273,7 @@ html{
 .form-control i {
 	visibility: hidden;
 	position: absolute;
-	top: 40px;
+	top: 30px;
 	right: 10px;
 }
 
@@ -280,14 +288,14 @@ html{
 }
 
 .form-control small {
-	color: #e74c3c;
+  visibility: hidden;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	visibility: hidden;
 }
 
 .form-control.error small {
+  color: #e74c3c;
 	visibility: visible;
 }
 
@@ -311,6 +319,37 @@ html{
 
 
 
+/* 
+#home .button1{
+  margin-top: 20px;
+}
+
+#home .button1 a{
+  display: inline-block;
+  margin: 12px 30px;
+  margin-left: 26px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  border: 1px solid black;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+  padding: 14px 0;
+  border-radius: 6px;
+  transition: all 1s;
+}
+
+#home .button1 a:hover,
+#home .button1 a:nth-child(5)
+{
+  background-color: transparent;
+  transform: scale(1.1);
+  color: white;
+}
+
+#home .abc a{
+  background-color: transparent;
+} */
 
 
 
@@ -321,6 +360,9 @@ html{
 
 
 
+
+
+/*
 section{
   padding: 100px 0;
   background-color: #f1f1f1;
